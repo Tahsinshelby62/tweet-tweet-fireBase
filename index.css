@@ -1,0 +1,181 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@700&display=swap');
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background: #1B1924;
+    color: white;
+    user-select: none;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 320px;
+    padding: 50px 30px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    width: 100%;
+}
+
+#logo {
+    display: block;
+    margin: 0 auto;
+    width: 90px;
+    margin-bottom: 16px;
+}
+
+h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Josefin Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;    
+}
+
+#form {
+    margin: 20px auto;
+}
+
+#form input, #form textarea {
+    background: #444059;
+    color: white;
+
+    padding: 12px 16px;
+    border: 1px solid #444059;
+    outline: none;
+    border-radius: 8px;
+
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#form > textarea {
+    resize: none;
+    min-height: 110px;
+}
+
+#form > textarea::placeholder, #form input::placeholder {
+    color: #8F8F8F;
+}
+
+#form #input-wrapper {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#form #input-wrapper > input {
+    width: 100%;
+    flex-grow: 1;
+
+    text-align: center;
+}
+
+#form #publish-btn {
+    background: #28A9F1;
+    color: #04131C;
+    
+    padding: 12px 16px 9px;
+    border: 1px solid #28A9F1;
+    border-radius: 8px;
+
+    text-align: center;
+    font-family: Josefin Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#render > h2 {
+    color: #FFF;
+    font-family: Josefin Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.endorsement-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    border: 2px solid white;
+    padding: 14px;
+    color: #1B1924;
+    margin-bottom: 12px;
+    transition: 0.25s ease-in-out;
+}
+
+.endorsement-card-to {
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.endorsement-card-text {
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.endorsement-card-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.endorsement-card-like:before {
+    content: url('assets/heart.svg');
+    margin-right: 2px;
+    vertical-align: middle;
+}
+
+.endorsement-card:hover {
+    transform: scale(1.1);
+    margin: 20px 0;
+    /* border-color:#28A9F1; */
+}
+
+/* For desktops */
+@media only screen and (min-width: 600px) {
+    .container {
+        margin: 0 auto;
+        max-width: 900px;
+        padding: 50px 100px;
+    }
+}
